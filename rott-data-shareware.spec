@@ -13,6 +13,7 @@ License:	non-commercially distributable if complete, unmodified and not bundled 
 %endif
 Group:		Applications/Games
 Source0:	http://filesingularity.timedoctor.org/swdata.zip
+# Source0-md5:	0150bf731e703cc91b8c5e21cb9402f3
 URL:		http://www.3drealms.com/rott/
 BuildRequires:	unzip
 Requires:	rott(SHAREWARE)
