@@ -2,7 +2,7 @@
 # _with_local	- local build, without DOS files (non-distributable)
 #
 Summary:	Rise of the Triad - shareware, one-episode version of data
-Summary(pl):	Rise of the Triad - sharewarowa wersja danych, zawieraj±ca jeden epizod
+Summary(pl.UTF-8):   Rise of the Triad - sharewarowa wersja danych, zawierajÄ…ca jeden epizod
 Name:		rott-data-shareware
 Version:	1.3
 Release:	1
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Rise of the Triad - shareware, one-episode version of data.
 
-%description -l pl
-Rise of the Triad - sharewarowa wersja danych, zawieraj±ca jeden
+%description -l pl.UTF-8
+Rise of the Triad - sharewarowa wersja danych, zawierajÄ…ca jeden
 epizod.
 
 %prep
