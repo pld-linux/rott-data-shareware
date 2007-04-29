@@ -1,12 +1,13 @@
 #
-# _with_local	- local build, without DOS files (non-distributable)
+# Conditional build:
+%bcond_with	license_agreement	# local build, without DOS files (non-distributable)
 #
 Summary:	Rise of the Triad - shareware, one-episode version of data
 Summary(pl.UTF-8):	Rise of the Triad - sharewarowa wersja danych, zawierająca jeden epizod
 Name:		rott-data-shareware
 Version:	1.3
 Release:	1
-%if 0%{?_with_local:1}
+%if %{with license_agreement}
 License:	non-distributable, free use
 %else
 License:	non-commercially distributable if complete, unmodified and not bundled on CD etc.
@@ -35,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/rott
 
 install *.dmo *.r* *.wad $RPM_BUILD_ROOT%{_datadir}/rott
-%{!?_with_local:install *.pck [a-z]*.exe $RPM_BUILD_ROOT%{_datadir}/rott}
+%{!?with_license_agreement:install *.pck [a-z]*.exe $RPM_BUILD_ROOT%{_datadir}/rott}
 
 mv -f FILE_ID.DIZ file_id.diz
 
